@@ -28,8 +28,8 @@ class Wave2ClimateEntity(ClimateEntity, EcoFlowAbstractEntity):
     """
     _attr_temperature_unit = UnitOfTemperature.CELSIUS
     _attr_target_temperature_step = 1
-    _attr_min_temp = 0
-    _attr_max_temp = 40
+    _attr_min_temp = 16
+    _attr_max_temp = 30
     _attr_hvac_modes = [HVACMode.OFF, HVACMode.COOL, HVACMode.HEAT, HVACMode.FAN_ONLY]
     _attr_fan_modes = ["Low", "Medium", "High"]
     _attr_preset_modes = [PRESET_NONE, PRESET_ECO, PRESET_SLEEP, "Max"]
